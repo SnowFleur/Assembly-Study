@@ -4,9 +4,11 @@ section .text
 global CMAIN
 CMAIN:
     ;write your code here
-    PRINT_STRING msg 
+    
+    PRINT_STRING msg  ;SASM Tool
+    
     xor rax, rax
     ret
     
-    section .data
+section .data
     msg db 'Hello World', 0x00
